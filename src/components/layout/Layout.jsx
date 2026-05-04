@@ -1,0 +1,19 @@
+import React from 'react';
+import Sidebar from './Sidebar';
+import Header from './Header';
+
+const Layout = ({ children }) => {
+  return (
+    <div className="min-h-screen bg-bg-primary">
+      <Sidebar />
+      <div className="ml-60">
+        <Header />
+        <main className="p-6 pt-20">
+          {children}
+        </main>
+      </div>
+    </div>
+  );
+};
+
+export default Layout;
